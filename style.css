@@ -1,1 +1,250 @@
 /* Add you CSS here */
+
+/* Set a nice background color for the whole page */
+/* Use 'Roboto Slab' for a more interesting font */
+body {
+  background-color: #5874e4; /* light blue-gray */
+  color: #222; /* dark text for readability */
+  font-family: 'Roboto Slab', Arial, sans-serif; /* changed font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-image: img('img/hero-bg.jpg'); /* Replace with the provided image */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center; /* Center the image */
+  color: #fff; /* White text for contrast */
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Style for the subheading under the header */
+.subheading {
+  color: #c8d6e5; /* light accent color */
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Headshot section styles */
+.headshot-section {
+  display: flex;
+  justify-content: center; /* center the image */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.headshot {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* makes the image round */
+  border: 4px solid #341f97; /* dark purple border */
+  object-fit: cover; /* keeps the image from stretching */
+  background: #fff; /* white background behind image */
+}
+
+
+/* About Me section styles */
+.about-me {
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+  padding: 30px 20px;
+  background-color: #f5f6fa; /* Light background for the section */
+}
+
+.about-card {
+  background-color: #fff; /* White card background */
+  color: #222; /* Dark text for readability */
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.about-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.about-card h2 {
+  font-family: 'Roboto Slab', Arial, sans-serif; /* Modern font for the heading */
+  color: #341f97; /* Dark purple for the heading */
+  margin-bottom: 16px;
+}
+
+.about-card p {
+  font-family: Arial, sans-serif; /* Modern sans-serif font for the text */
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  background-image: url('img/hero-bg.jpg'); /* Use the provided image as the background */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* White text for contrast */
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.hero-headshot {
+  width: 200px; /* Smaller size for the headshot */
+  height: 200px;
+  border-radius: 50%; /* Makes the image round */
+  border: 3px solid #fff; /* White border for contrast */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.hero h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #48dbfb; /* Button color */
+  color: #222; /* Dark text for contrast */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #341f97; /* Darker color on hover */
+}
+
+/* Skills Section Styles */
+.skills {
+  background-color: #f5f6fa; /* Light background */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-family: 'Roboto Slab', Arial, sans-serif; /* Modern font */
+  color: #341f97; /* Dark purple */
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center; /* Center the skill cards */
+  gap: 20px; /* Space between cards */
+}
+
+.skill-card {
+  background-color: #fff; /* White card background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  width: 120px; /* Fixed width for cards */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.skill-card img {
+  width: 60px; /* Icon size */
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-family: Arial, sans-serif; /* Simple sans-serif font */
+  font-size: 1em;
+  color: #222; /* Dark text */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #000000; /* Dark purple background */
+  padding: 10px 0;
+  position: sticky; /* Sticks to the top when scrolling */
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: inline-flex; /* Align items horizontally */
+  gap: 20px; /* Space between links */
+}
+
+.navbar li {
+  display: inline; /* Ensure list items are inline */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* White text for contrast */
+  font-family: 'Roboto Slab', Arial, sans-serif; /* Match the site's font */
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px; /* Rounded corners for hover effect */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+  background-color: #48dbfb; /* Light blue hover effect */
+  color: #222; /* Dark text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about-me {
+    padding: 20px 10px;
+  }
+  .headshot {
+    width: 120px;
+    height: 120px;
+  }
+  .hero h1 {
+    font-size: 1.5em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .hero-profile {
+    width: 100px;
+    height: 100px;
+  }
+  .skill-card {
+    width: 100px; /* Smaller cards for mobile */
+  }
+  .skill-card img {
+    width: 50px;
+    height: 50px;
+  }
+}

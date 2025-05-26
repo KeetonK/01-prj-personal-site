@@ -2,10 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Keeton Kauffman | Portfolio</title>
+  <!-- Add Google Fonts for a more interesting font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header with your name -->
+  <header id="home">
+    <h1>Keeton Kauffman</h1>
+    <!-- Subheading describing the website -->
+    <p class="subheading">A personal website to showcase my portfolio projects and journey at ASU.</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <!-- Add the headshot image in the hero section -->
+      <img src="img/Headshot.png" alt="Keeton Kauffman Headshot" class="hero-headshot">
+      <h1>Hi, I'm Keeton Kauffman</h1>
+      <p>DoorDash Campus Ambassador | Former Treasurer of SAE | ASU Double Major in Digital Marketing & Finance</p>
+      <a href="#about" class="hero-button">Scroll to learn more</a>
+    </div>
+  </section>
+
+  <!-- About Me section -->
+  <section id="about" class="about-me">
+    <div class="about-card">
+      <h2>About Me</h2>
+      <p>
+        I'm Keeton Kauffman — a junior at ASU double majoring in Digital Marketing and Finance. I’ve led as Treasurer for Sigma Alpha Epsilon, helped sign up 12,000+ students as a DoorDash Campus Ambassador, and thrive where creativity meets strategy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <!-- Skill Card for HTML -->
+      <div class="skill-card">
+        <img src="img/html.svg" alt="HTML Icon">
+        <p>HTML</p>
+      </div>
+      <!-- Skill Card for CSS -->
+      <div class="skill-card">
+        <img src="img/css.svg" alt="CSS Icon">
+        <p>CSS</p>
+      </div>
+      <!-- Skill Card for JavaScript -->
+      <div class="skill-card">
+        <img src="img/java.svg" alt="JavaScript Icon">
+        <p>JavaScript</p>
+      </div>
+      <!-- Skill Card for Excel -->
+      <div class="skill-card">
+        <img src="img/Excel.svg" alt="Excel Icon">
+        <p>Excel</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
